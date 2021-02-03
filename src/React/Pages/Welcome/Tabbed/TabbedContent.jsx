@@ -16,5 +16,6 @@ const TabbedContent = ({chosenTab}) => {
 export default TabbedContent;
 
 const TabbedContentStyled = styled.div`
-    
+    background-color: teal;
+    padding: 20px;
 `;
