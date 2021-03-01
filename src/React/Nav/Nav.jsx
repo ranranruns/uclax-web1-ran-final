@@ -16,16 +16,5 @@ const Nav = () => {
 export default Nav;
 
 const NavStyled = styled.nav`
-a {
-    background: teal;
-    color: white;
-    text-decoration: none;
 
-    padding: 10px;
-    margin: 10px;
-
-    &.active {
-        background-color: #015150;
-    }
-}
 `;
