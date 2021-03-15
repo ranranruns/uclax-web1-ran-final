@@ -29,4 +29,5 @@ const GalleryStyled = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0px 0px 50px 0px;
 `;

@@ -13,7 +13,7 @@ const Services = () => {
 
     return (
         <div>
-            <h1>Services</h1>
+            {/* <h1>Classes</h1> */}
             <FilterNav 
                 services={ services } 
                 catChosen={ catChosen } 

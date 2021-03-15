@@ -7,6 +7,7 @@ import {
 
 /* Components ---------------------------*/
 import Nav from './Nav.jsx';
+import Header from '../Header.jsx';
 
 const NavMobile = () => {
 
@@ -18,16 +19,19 @@ const NavMobile = () => {
 
     return (
         <NavMobileStyled className='NavMobile'>
+            <Header />
+
             <div 
                 className="hamburger"
                 onClick={ handleHamburgerToggle }
             >
+
                 <FontAwesomeIcon icon={ faBars } />
             </div>
             {
                 showMobileMenu &&
                 <div className="nav-wrapper">
-                <Nav/>
+                <Nav handleHamburgerToggle={handleHamburgerToggle} />
                 </div>
             }
         </NavMobileStyled>
@@ -46,23 +50,22 @@ const NavMobileStyled = styled.div`
         width: 50px;
         height: 50px;
 
-        background-color: teal;
+        background-color: #8c7851;
 
         text-align: center;
-        padding-top: 9px;
+        padding-top: 10px;
 
         cursor: pointer;
 
         svg {
             font-size: 30px;
-            color: white;
+            color: #fffffe;
         }
 
      }
 
      .nav-wrapper {
-        background-color: #fff;
-
+        background-color: #fffffe;
         position: fixed;
         top: 0px;
         right: 0px;
@@ -78,18 +81,18 @@ const NavMobileStyled = styled.div`
 
     a {
         display: block;
-        background: teal;
-        color: white;
+        background: #8c7851;
+        color: #fffffe;
         text-decoration: none;
         padding: 10px;
         margin-bottom: 5px;
 
         &.active {
-            background-color: #015150;
+            background-color: #eaddcf;
+            color: #8c7851;
         }
         &:hover {
-            background-color: #02aca9;
-            color: #003232;
+            background-color: #eaddcf;
         }
     }
 

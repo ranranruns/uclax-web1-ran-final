@@ -69,7 +69,7 @@ const GalleryItemStyled = styled.div`
         }
         
         h2 {
-            background-color: maroon;
+            background-color: #8c7851;
             color: white;
             padding: 10px;
             margin: 0px;

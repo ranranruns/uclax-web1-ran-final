@@ -19,35 +19,43 @@ const NavLargeStyled = styled.div`
 
     display: flex;
     justify-content: center;
-    background-color: #003232;
+    background-color: #8c7851;
     padding: 20px;
-
+    
     .Nav {
         display: flex;
-        width: 500px;
+        justify-content: space-between;
+        width: 100%;
     }
 
-    a {
+    .Nav-span {
+        display: flex;
+    }
+
+    .Nav-span > a {
         flex: 1;
         text-align: center;
+        font-weight: bold;
         border-radius: 5px;
 
 
         display:block;
-        background: teal;
-        color: white;
+        /* background: #8c7851; */
+        color: #fffffe;
         text-decoration: none;
 
 
         padding: 10px;
         margin: 0px 5px;
 
-        &.active {
-            background-color: #015150;
+        &:hover {
+            color: #eaddcf;
         }
-        &.hover {
-            background-color: #02aca9;
-            color: #003232;
+
+        &.active {
+           text-decoration: underline;
+           text-underline-offset: 9px;
+           text-decoration-thickness: 2px;
         }
     }
 `;

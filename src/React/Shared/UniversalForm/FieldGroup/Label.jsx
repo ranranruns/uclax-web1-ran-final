@@ -13,5 +13,7 @@ const Label = ({theField}) => {
 export default Label;
 
 const LabelStyled = styled.div`
+    color: #716040;
+    padding: 10px 0px;
     
 `;

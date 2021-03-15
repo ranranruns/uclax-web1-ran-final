@@ -28,11 +28,12 @@ const InputStyled = styled.input`
     padding: 10px;
     border-radius: 5px;
     outline: none;
+    color: #716040;
 
-    border: solid 3px #c4c4c4;
+    border: solid 3px #8c7851;
 
     &:focus {
-        border: solid 3px #969696;
+        border: solid 3px #716040;
     }
     &.error {
         border: solid 3px red;

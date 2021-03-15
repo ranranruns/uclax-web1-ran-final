@@ -9,7 +9,6 @@ import { mq } from '../common/media_queries.js';
 import useMediaQuery from '../common/useMediaQuery.js';
 
 /* Components ---------------------------*/
-import Header from './Header.jsx';
 import NavMobile from './Nav/NavMobile.jsx';
 import NavLarge from './Nav/NavLarge.jsx';
 import Main from './Main.jsx';
@@ -22,7 +21,7 @@ const Container = () => {
     return (
         <BrowserRouter>
             <ContainerStyled className='Container'>
-                <Header />
+           
                 {
                     isSmall
                     ? <NavMobile />
@@ -38,16 +37,18 @@ const Container = () => {
 export default Container;
 
 const ContainerStyled = styled.div`
-    background-color: pink;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
     @media ${mq.tablet} {
-        background-color: yellow;
+        background-color: #f9f4ef;
     }
     @media ${mq.desktop} {
-        background-color: maroon;
+        background-color: #f9f4ef;
     }
     @media ${mq.ultrawide} {
-        background-color: purple;
+        background-color: #f9f4ef;
     }
 
     `;

@@ -14,7 +14,7 @@ const ContactForm = () => {
             <UniversalForm 
                 fields={ contactFields } 
                 apiURL='/email/send'
-                submitText='Send Email'
+                submitText='Send'
             />  
         </ContactFormStyled>
     );

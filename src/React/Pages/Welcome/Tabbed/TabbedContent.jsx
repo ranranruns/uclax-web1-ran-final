@@ -24,8 +24,11 @@ const TabbedContent = ({chosenTab}) => {
 export default TabbedContent;
 
 const TabbedContentStyled = styled.div`
-    background-color: teal;
-    padding: 20px;
+    background-color: #eaddcf;
+    padding: 50px;
+    color: #716040;
+    font-size: 18px;
+    letter-spacing: .03em;
 
     @media ${mq.desktop} {
         display: flex;
@@ -37,6 +40,7 @@ const TabbedContentStyled = styled.div`
     }
     .right {
         flex: 4;
+        margin-left:25px;
     }
 
     @media ${mq.desktop} {

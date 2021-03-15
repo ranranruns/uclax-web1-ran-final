@@ -14,7 +14,7 @@ const LoginForm = () => {
             <UniversalForm 
                 fields={ loginFields }
                 apiURL='/user/login'
-                submitText='Log In'
+                submitText='Login'
             />   
         </LoginFormStyled>
     );

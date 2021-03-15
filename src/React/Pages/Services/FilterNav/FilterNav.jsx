@@ -29,5 +29,6 @@ export default FilterNav;
 const FilterNavStyled = styled.div`
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 `;

@@ -1,26 +1,15 @@
 import React from 'react';
+import YouTube from 'react-youtube';
 import styled from 'styled-components';
-
-/* Scripts ---------------------------*/
-import { staffData } from './staffData.js';
-
-/* Component ---------------------------*/
-import StaffMember from './StaffMember.jsx';
 
 const Staff = () => {
 
     return (
         <StaffStyled className='Staff'>
-            <h2>Staff</h2>
+            <h1>View Demo</h1>
 
-            <div className='members'>
-                {
-                    staffData.map((member, idx) => {
-                        return <StaffMember key={ idx } member={ member } />
-                    }) 
-                }
-            </div>
-
+            <YouTube videoId={"U64bLz4EWRI"} containerClassName="youtube-container" />
+            <h1>{""}</h1>
         </StaffStyled>
     );
 }
@@ -28,16 +17,31 @@ const Staff = () => {
 export default Staff;
 
 const StaffStyled = styled.div`
-    background-color: teal;
+    background-color: #eaddcf;
     padding: 25px;
-    margin: 25px 0px;
-    
-    .members {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        justify-content: flex-end;
-        justify-content: space-between;
-        justify-content: center;
+    margin: 30px 0px 50px 0px;
+    color: #716040;
+
+    h1 {
+        text-align: center;
+        padding: 0px 0px 20px 0px;
+    }
+
+    .youtube-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: min(56.25%, 601px);
+        overflow: hidden;
+        margin: auto;
+        max-width: 1096px;
+    }
+  
+    .youtube-container iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-height:576px;
     }
 `;

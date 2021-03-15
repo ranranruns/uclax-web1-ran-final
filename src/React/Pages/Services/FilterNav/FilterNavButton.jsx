@@ -28,14 +28,30 @@ const FilterNavButtonStyled = styled.div`
     button {
         display: inline-block;
         width: 150px;
-        background-color: white;
+        background-color: #eaddcf;
         padding: 10px 0px;
         margin: 0px 10px;
+        color: #8c7851;
+        font-weight: bold;
+        
+
+        border: solid 1px #eaddcf;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &:hover {
+        button {
+        border: solid 1px #fffffe;
+        background-color: #fffffe;
+        }
     }
 
     &.active {
         button {
-            background-color: #ffbbbb;
+            border: solid 1px #8c7851;
+            background-color: #8c7851;
+            color: #fffffe;
         }
     }
 `;
